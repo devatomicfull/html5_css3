@@ -1,0 +1,10 @@
+# 📘 HTML5 e CSS3 – Domine a Web do Futuro  
+Autor: **Lucas Mazza** – Casa do Código
+
+Este diretório contém meus resumos e exercícios do livro.
+
+## 📑 Sumário dos capítulos estudados
+
+1. [Capítulo 01 – O desenvolvimento web hoje](cap01-desenvolvimento-web-hoje.md)
+2. Capítulo 02 – …
+3. Capítulo 03 – …

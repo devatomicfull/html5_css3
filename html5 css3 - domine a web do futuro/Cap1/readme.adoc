@@ -6,5 +6,13 @@ Este diretório contém meus resumos e exercícios do livro.
 ## 📑 Sumário dos capítulos estudados
 
 1. [Capítulo 01 – O desenvolvimento web hoje](cap01-desenvolvimento-web-hoje.md)
-2. Capítulo 02 – …
-3. Capítulo 03 – …
+2. Capítulo 02 – Os primeiros passos com o nosso site
+3. Capítulo 03 – HTML5: o que mudou?
+4. O que todo desenvolvedor precisa saber sobre CSS
+5. O que você consegue fazer com CSS 3
+6. Tomando controle da estrutura visual
+7. Melhorando os seus formulários
+8. Efeitos 101: Trabalhando com animações e transições
+9. O universo fora dos desktops e notebooks
+10. Ferramentas - Frameworks, Plugins e Pré-processadores
+11. Não pare por aqui

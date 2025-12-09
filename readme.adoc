@@ -14,4 +14,4 @@ Cada livro possui:
 ### 1. HTML5 e CSS3 – Domine a Web do Futuro  
 **Autor:** Lucas Mazza – Casa do Código  
 **Status:** Em andamento  
-📂 Pasta: [`html5 css3 - domine_a_web do futuro/`](html5 css3 - domine a web do futuro/)
+📂 Pasta: [`html5 css3 - domine_a_web do futuro/`](html5_css3-domine_a_web_do_futuro/)

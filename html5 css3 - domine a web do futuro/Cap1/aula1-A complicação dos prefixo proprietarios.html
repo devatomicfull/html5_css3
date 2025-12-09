@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A complicação dos prefixos proprietarios</title>
+    <style>
+    /* Seletor de classe: usado para aplicar estilos a multiplos elementos HTML que possuem o mesmo atributo
+       Classe comum → você cria e aplica no HTML
+    */
+        .button{
+        /* Prefixo para o Firefox. */        
+        -moz-transition: all 0.2s linear;
+        /* Prefixo para o Chorme, Safari, Safari Mobile e Android. */
+        -webkit-transition: all 0.2s linear;    
+        /* Prefixo para o Opera */
+        -o-transition: all 0.2s linear;
+        /* Versão final, ainda não suportada em todos os browsers*/
+        transition: all 0.2s linear;
+        }
+
+        /* id*/
+        #destaque{
+            background-color: yellow;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        #link_{
+            color: brown;
+            text-decoration: none;
+        }
+
+        /* pseudo-classes:  é um tipo especial de seletor que representa um estado de um elemento.
+           não é algo que você adiciona no HTML, é algo que acontece automaticamente no navegador.
+           
+           Pseudo-classe → o navegador ativa quando o elemento está em um estado específico
+           Elas não são classes, mas funcionam como “estados especiais” do elemento.
+        */
+
+        /* Quando o mouse passa por cima */
+        /* Quando o link já foi visitado */
+        /* No exato momento do clique */
+
+        #link_:hover {
+            color: rgb(0, 255, 106);
+        }
+
+        #link_:visited {
+            color: purple;
+        }
+
+        #link_:active {
+            color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class="button">Prefixos proprietarios</h1>
+    <p>
+    Muitas propriedades e funcionalidades novas do CSS ainda não estão totalmente definidas ou implementadas nos navegadores. Mesmo assim, podemos usá-las em versões “experimentais”. 
+    Para isso, cada navegador libera essas propriedades usando um prefixo próprio, indicando que ainda não são a versão final.
+    Na teoria isso é útil, mas na prática virou um problema: o desenvolvedor precisa escrever a mesma regra de CSS várias vezes, cada uma com um prefixo diferente, apenas para garantir compatibilidade entre os navegadores. 
+    </p>
+    <p>
+        <strong>
+            <span id="destaque"> Essas propriedades enquanto elas são defidas e refinadas. O objetivo é, eventualmente, não precisar mais das versões prefixadas e se utilizar apenas a versão canônica das propriedades</span>
+        </strong>
+        <br>
+        Suporte: <a id="link_" href="http://caniuse.com">analise</a>
+    </p>
+
+    <h1> Diferença simples entre pseudo-classe e pseudo-elemento</h1>
+    
+    <table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>O que faz</th>
+            <th>Sintaxe</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pseudo-classe</td>
+            <td>Muda o estado do elemento</td>
+            <td><code>:</code> (ex: <code>:hover</code>, <code>:active</code>)</td>
+        </tr>
+        <tr>
+            <td>Pseudo-elemento</td>
+            <td>Cria ou estiliza uma parte do elemento</td>
+            <td><code>::</code> (ex: <code>::before</code>, <code>::after</code>)</td>
+        </tr>
+    </tbody>
+</table>
+
+
+    <h1>Dica para nunca esquecer</h1>
+    <p>
+        Pseudo-CLASSE usa 1 dois-pontos: :hover → classe = estado
+        <br>
+        Pseudo-ELEMENTO usa 2 dois-pontos: ::before → elemento = parte criada
+    </p>
+
+</body>
+</html>

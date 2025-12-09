@@ -1,0 +1,17 @@
+# 📚 Repositório de Estudos – Front-End
+
+Este repositório contém meus resumos, anotações e exercícios de livros usados para aprender **HTML, CSS, JavaScript e desenvolvimento front-end**.
+
+## Organização
+
+Cada livro possui:
+- Um diretório próprio
+- Um README explicando o livro
+- Arquivos separados por capítulo
+
+## 📘 Livros estudados
+
+### 1. HTML5 e CSS3 – Domine a Web do Futuro  
+**Autor:** Lucas Mazza – Casa do Código  
+**Status:** Em andamento  
+📂 Pasta: [`html5 css3 - domine_a_web do futuro/`](html5 css3 - domine_a_web do futuro/)

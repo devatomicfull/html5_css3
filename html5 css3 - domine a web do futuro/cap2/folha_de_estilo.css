@@ -1,0 +1,45 @@
+/* usa-se ponto para classe*/
+.container {
+    /* margina superior e inferior zero e esquerda e direta automatica*/
+    margin: 0 auto;
+    width: 960px;
+}
+
+/* tudo dentro desta tag body receba este estilo... etc.
+   Desta forma, todos os elementos da página irão herdar essas regras “padrões” da nossa página, e podemos alterá-las
+   conforme a necessidade de cada elemento.
+*/
+body {
+    /* Caso a primeira fonte listada não esteja disponível no sistema operacional do usuário, o navegador tentará utilizar a próxima e assim sucessivamente */
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    /*  Não estamos alterando a altura da fonte!
+        sem nenhuma medida específica - como px ou em - indica para a altura das linhas carem com 160% da altura da fonte. Caso ela esteja
+        em 16px, o line-height será 24px, respeitando a regra de sempre ser 1.6 da altura da fonte.*/
+    line-height: 1.6;
+}
+
+.place {
+    /*  As três propriedades - padding, margin e border - funcionam de maneira similar,sendo possível denir um valor especíco para cada um dos 4 lados do elemento.
+        Caso você queria denir o valor para apenas um deles, é possível utilizar a variação - top/right/bottom/left, como o margin-bottom.
+        linha de 1px formato solido da cor 
+    */
+    border-color: #CCC #999 #CCC #CCC;
+    border: 1px solid #CCC;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/*  Apesar dos 10px de padding, o espaçamento entre a borda e o título aparenta ser
+    mais do que isso. Isso é resultado do margin padrão do elemento h2 somado com o
+    padding da div que encapsula. Para ajustar isso, podemos remover a margem do h2
+    completamente. De brinde, adicionamos uma borda verde abaixo do título.
+
+    Assim, todos os lados do elemento .place terão o mesmo espaçamento de 10px.
+    Este estilo só se aplicará as ocorrências de h2 dentro de outro elemento, que possua
+    a classe place. E diferente da borda sólida de antes, utilizamos o dashed no lugar de
+    solid, para criar um efeito diferente, com uma borda tracejada.
+*/
+.place h2 {
+    border-bottom: 1px dashed #7E9F19;
+    margin: 0;
+}

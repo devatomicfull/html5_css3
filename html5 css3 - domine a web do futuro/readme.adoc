@@ -5,7 +5,7 @@ Este diretório contém meus resumos e exercícios do livro.
 
 ## 📑 Sumário dos capítulos estudados
 
-1. O desenvolvimento web hoje](cap01-desenvolvimento-web-hoje.md)
+1. link:./cap1 [O desenvolvimento web hoje]
 2. Os primeiros passos com o nosso site
 3. HTML5: o que mudou?
 4. O que todo desenvolvedor precisa saber sobre CSS

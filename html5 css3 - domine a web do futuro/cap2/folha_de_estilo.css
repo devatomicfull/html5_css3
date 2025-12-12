@@ -16,6 +16,8 @@ body {
         sem nenhuma medida específica - como px ou em - indica para a altura das linhas carem com 160% da altura da fonte. Caso ela esteja
         em 16px, o line-height será 24px, respeitando a regra de sempre ser 1.6 da altura da fonte.*/
     line-height: 1.6;
+    background: #FFF1D6;
+    /* ou poderia ser neste formato : background: #FFF1D6 url(images/noise.png);*/
 }
 
 .place {
@@ -27,6 +29,7 @@ body {
     border: 1px solid #CCC;
     margin-bottom: 20px;
     padding: 10px;
+    background-color: #FFF; /* Poderia ser usada o background tambem temos esta 2 opções*/
 }
 
 /*  Apesar dos 10px de padding, o espaçamento entre a borda e o título aparenta ser
@@ -42,4 +45,62 @@ body {
 .place h2 {
     border-bottom: 1px dashed #7E9F19;
     margin: 0;
+}
+
+.place a {
+    /* A cor do link na tela*/
+    color: #2C88A7;
+    /* Negrito o link */
+    font-weight: bold;
+}
+
+h1 a {
+    color: #7E9F19;
+    /*  A propriedade text-decoration do CSS serve para adicionar ou remover linhas decorativas no texto, como sublinhados (underline), sobrelinhas (overline), 
+        ou linhas que o cortam (line-through), e permite personalizar a cor, estilo (sólido, pontilhado, ondulado) e espessura dessas linhas, melhorando a estética
+        e a semântica visual do conteúdo, como links e avisos de exclusão de texto, sem precisar de tags HTML extras para cada efeito. 
+        Neste caso estamos tirando o sublinhado mesmo*/
+    text-decoration: none;
+}
+
+/*
+
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|    Explicação sobre o que seria o estado em css :                                                                                                  |      
+|                                                                                                                                                    |      
+|    Em CSS, o "estado" de um elemento refere-se a uma condição específica em que o elemento se encontra em um determinado momento,                  |
+|    geralmente devido à interação do usuário ou ao seu contexto na estrutura do documento (DOM). Os pseudo-seletores de estado,                     |   
+|    mais formalmente chamados de pseudo-classes, são usados para aplicar estilos CSS a um elemento apenas quando ele está nesse estado específico.  |  
+|                                                                                                                                                    |  
+|    As pseudo-classes sempre começam com dois pontos (:) seguidos pelo nome do estado.                                                              |      
+|                                                                                                                                                    |  
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+
+
+============================= PSEUDO-SELETORES MAIS USADOS ============================= 
+
+                1.  :hover         Quando o mouse passa por cima
+                2.  :active        Quando o elemento está sendo clicado
+                3.  :focus         Quando um input recebe foco
+                4.  :visited       Links que já foram visitados
+                5.  :link          Links que ainda não foram visitados
+                6.  :first-child   Primeiro filho dentro de um elemento
+                7.  :last-child    Último filho dentro de um elemento
+                8.  :nth-child()   Seleciona filhos pela posição (par, ímpar, número)
+                9.  :not()         Seleciona tudo exceto o que estiver na condição
+                10. :checked       Inputs marcados (checkbox, radio)
+
+=========================================================================================
+
+*/
+
+/*  podemos mudar a cor do link para quando se posicionar o cursor em cima dele, utilizando um pseudo-seletor do estado
+    hover do elemento.
+
+    estamos alterando o estado () do link
+    
+    Quando o cursor sair de cima do título da página, o link voltará ao seu estilo tradicional. */
+h1 a:hover {
+    background-color: #7E9F19;
+    color: #FFF;
 }

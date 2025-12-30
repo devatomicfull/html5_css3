@@ -80,9 +80,9 @@ h1 a {
 ============================= PSEUDO-SELETORES MAIS USADOS ============================= 
 
                 1.  :hover         Quando o mouse passa por cima
-                2.  :active        Quando o elemento está sendo clicado
-                3.  :focus         Quando um input recebe foco
-                4.  :visited       Links que já foram visitados
+                2.  :active        Quando o elemento está sendo clicado, , para o instante onde o elemento está sendo pressionado pelo mouse;
+                3.  :focus         Quando um input recebe foco,  para elementos que estejam focados pelo teclado, como links ou campos de um formulário;
+                4.  :visited       Links que já foram visitados,  para endereços já visitados pelo usuário;
                 5.  :link          Links que ainda não foram visitados
                 6.  :first-child   Primeiro filho dentro de um elemento
                 7.  :last-child    Último filho dentro de um elemento
